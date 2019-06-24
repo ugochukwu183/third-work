@@ -14,15 +14,18 @@ body{
 header{
     background-color: green;
     padding: 0 px;
-
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 header div{
     display: inline-block;
     margin:0 5px;
-    
 
 }
+
 header nav{
     display: inline-block;
     text-align: right;
@@ -45,6 +48,11 @@ header a{
     
 }
 
+#ewoo{
+    
+    padding-top: 30px;
+}
+
 .actives{
     background-color: red;
     padding: 5px 8px;
@@ -62,13 +70,14 @@ article{
     margin: 10px 10px;
     padding: 30px;
     width:330px;
-    line-height:30px;
+    line-height:28px;
+    vertical-align: middle;
 }
 
-article.article__same{
+/*article.article__same{
     height: 350px;
 
-}
+}*/
 
 article.article__same h1{
     color:darkgreen;
@@ -85,10 +94,23 @@ article button{
     border-radius: 10px;
     background-color:darkgreen;
     color:#fff;
+    border-color: darkgreen;
+    outline: none;
+    font:inherit;
 }
-h1{
 
+article button:hover{
+   
+    background-color:#fff;
+    color:darkgreen;
+    cursor: pointer;
 }
+
+article button:focus{
+   
+  outline:none;
+}
+
 .Article-carrier{
     padding: 0px;
     text-align: center;
@@ -101,7 +123,7 @@ h1{
     background-color: rgb(238, 16, 90);
     text-align: center;
     padding: 50px 0 0px 0;
-    
+    margin-top: 100px;
 }
 
 .images-carrier ul{
@@ -131,9 +153,11 @@ footer{
     color: white;
     text-align: center;
     margin-top:50px; 
+    padding: 30px;
 }
 
 footer ul li{
-    display: inline-block;
-    padding: 50px 10px 20px 10px;
+   /* display: inline-block;*/
+    /*padding: 50px 0px 0px 10px;
+    list-style:none;
 }
